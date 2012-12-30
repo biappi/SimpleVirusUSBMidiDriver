@@ -7,11 +7,11 @@ I started this project since at the time of writing, Roland does not provide dri
 
 At the present stage it consists of sample code from Apple Inc. which was obtained from the casiousbmididriver (A Casio USB MIDI Interface driver for Mac OS X).
 
-The only change to the sample code that was necessary to get the driver to work with the Roland PC-300, was to set the USB interface number, vendor ID and product ID in the file GenericUSBMidi.cp
+The only change to the sample code that was necessary to get the driver to work with the Roland PC-300, was to set the USB interface number, vendor ID and product ID in the file GenericUSBMidi.cp:
 
-#define kTheInterfaceToUse	2	// The third one
-#define kMyVendorID		0x0582	// Roland Corporation
-#define kMyProductID		0x0008
+    #define kTheInterfaceToUse	2	// The third one
+    #define kMyVendorID		0x0582	// Roland Corporation
+    #define kMyProductID	0x0008
 
 The idea of the present project would be to provide a generic open source OS X driver for several other USB MIDI devices. Contributions are welcome! 
 
