@@ -22,7 +22,6 @@ sudo cp -r GenericUSBMidi.plugin /Library/Audio/MIDI\ Drivers/
 After that it is necessary to reboot the MIDIServer process (or the entire OS). 
 
 For debugging (e.g. using break points) attach your debugger to the MIDIServer process.
-
 In Xcode this is done via the Menu Product -> Attach to Process -> MIDIServer.
 
 Have fun!
