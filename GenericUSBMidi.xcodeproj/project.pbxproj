@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3458C2B1690D1870041FB73 /* IOServiceClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C131690D1870041FB73 /* IOServiceClient.cpp */; };
+		A3458C2C1690D1870041FB73 /* IOServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C141690D1870041FB73 /* IOServiceClient.h */; };
+		A3458C2D1690D1870041FB73 /* MIDIBackCompatible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C151690D1870041FB73 /* MIDIBackCompatible.cpp */; };
+		A3458C2E1690D1870041FB73 /* MIDIBackCompatible.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C161690D1870041FB73 /* MIDIBackCompatible.h */; };
+		A3458C2F1690D1870041FB73 /* MIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C171690D1870041FB73 /* MIDIDriver.cpp */; };
+		A3458C301690D1870041FB73 /* MIDIDriverClass.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C181690D1870041FB73 /* MIDIDriverClass.h */; };
+		A3458C311690D1870041FB73 /* MIDIDriverDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C191690D1870041FB73 /* MIDIDriverDevice.cpp */; };
+		A3458C321690D1870041FB73 /* MIDIDriverDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C1A1690D1870041FB73 /* MIDIDriverDevice.h */; };
+		A3458C331690D1870041FB73 /* MIDIDriverUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C1B1690D1870041FB73 /* MIDIDriverUtils.cpp */; };
+		A3458C341690D1870041FB73 /* MIDIDriverUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C1C1690D1870041FB73 /* MIDIDriverUtils.h */; };
+		A3458C351690D1870041FB73 /* USBDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C1D1690D1870041FB73 /* USBDevice.cpp */; };
+		A3458C361690D1870041FB73 /* USBDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C1E1690D1870041FB73 /* USBDevice.h */; };
+		A3458C371690D1870041FB73 /* USBDeviceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C1F1690D1870041FB73 /* USBDeviceManager.cpp */; };
+		A3458C381690D1870041FB73 /* USBDeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C201690D1870041FB73 /* USBDeviceManager.h */; };
+		A3458C391690D1870041FB73 /* USBInterfaceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C211690D1870041FB73 /* USBInterfaceManager.cpp */; };
+		A3458C3A1690D1870041FB73 /* USBInterfaceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C221690D1870041FB73 /* USBInterfaceManager.h */; };
+		A3458C3B1690D1870041FB73 /* USBMIDIDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C231690D1870041FB73 /* USBMIDIDevice.cpp */; };
+		A3458C3C1690D1870041FB73 /* USBMIDIDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C241690D1870041FB73 /* USBMIDIDevice.h */; };
+		A3458C3D1690D1870041FB73 /* USBMIDIDeviceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C251690D1870041FB73 /* USBMIDIDeviceManager.cpp */; };
+		A3458C3E1690D1870041FB73 /* USBMIDIDeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C261690D1870041FB73 /* USBMIDIDeviceManager.h */; };
+		A3458C3F1690D1870041FB73 /* USBMIDIDriverBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C271690D1870041FB73 /* USBMIDIDriverBase.cpp */; };
+		A3458C401690D1870041FB73 /* USBMIDIDriverBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C281690D1870041FB73 /* USBMIDIDriverBase.h */; };
+		A3458C411690D1870041FB73 /* USBVendorMIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C291690D1870041FB73 /* USBVendorMIDIDriver.cpp */; };
+		A3458C421690D1870041FB73 /* USBVendorMIDIDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C2A1690D1870041FB73 /* USBVendorMIDIDriver.h */; };
+		A3F510BD168D541100349230 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F510BC168D541100349230 /* CoreAudioKit.framework */; };
+		A3F5113C168D5B3F00349230 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113B168D5B3F00349230 /* IOKit.framework */; };
+		A3F5113E168D5B5500349230 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113D168D5B5500349230 /* CoreMIDI.framework */; };
+		A3F51140168D5BAE00349230 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113F168D5BAE00349230 /* AudioUnit.framework */; };
+		A3F51142168D5BD800349230 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F51141168D5BD700349230 /* AudioToolbox.framework */; };
+		A3F51146168D5C7100349230 /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3F51144168D5C7100349230 /* CAMutex.cpp */; };
+		A3F51147168D5C7100349230 /* CAMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F51145168D5C7100349230 /* CAMutex.h */; };
+		A3F5114A168D5D2400349230 /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3F51148168D5D2400349230 /* CAHostTimeBase.cpp */; };
+		A3F5114B168D5D2400349230 /* CAHostTimeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F51149168D5D2400349230 /* CAHostTimeBase.h */; };
+		A3F54AD6168D45D700349230 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F54AD5168D45D700349230 /* CoreFoundation.framework */; };
+		A3F54AE0168D45D700349230 /* GenericUSBMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F54ADF168D45D700349230 /* GenericUSBMidi.h */; };
+		A3F54AE3168D45D700349230 /* GenericUSBMidi.cp in Sources */ = {isa = PBXBuildFile; fileRef = A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */; };
+		A3F54BB1168D4C6900349230 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F54BB0168D4C6900349230 /* CoreAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3458C121690D1870041FB73 /* Architecture.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Architecture.txt; sourceTree = "<group>"; };
+		A3458C131690D1870041FB73 /* IOServiceClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOServiceClient.cpp; sourceTree = "<group>"; };
+		A3458C141690D1870041FB73 /* IOServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOServiceClient.h; sourceTree = "<group>"; };
+		A3458C151690D1870041FB73 /* MIDIBackCompatible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIBackCompatible.cpp; sourceTree = "<group>"; };
+		A3458C161690D1870041FB73 /* MIDIBackCompatible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIBackCompatible.h; sourceTree = "<group>"; };
+		A3458C171690D1870041FB73 /* MIDIDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIDriver.cpp; sourceTree = "<group>"; };
+		A3458C181690D1870041FB73 /* MIDIDriverClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDriverClass.h; sourceTree = "<group>"; };
+		A3458C191690D1870041FB73 /* MIDIDriverDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIDriverDevice.cpp; sourceTree = "<group>"; };
+		A3458C1A1690D1870041FB73 /* MIDIDriverDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDriverDevice.h; sourceTree = "<group>"; };
+		A3458C1B1690D1870041FB73 /* MIDIDriverUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIDriverUtils.cpp; sourceTree = "<group>"; };
+		A3458C1C1690D1870041FB73 /* MIDIDriverUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDriverUtils.h; sourceTree = "<group>"; };
+		A3458C1D1690D1870041FB73 /* USBDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBDevice.cpp; sourceTree = "<group>"; };
+		A3458C1E1690D1870041FB73 /* USBDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBDevice.h; sourceTree = "<group>"; };
+		A3458C1F1690D1870041FB73 /* USBDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBDeviceManager.cpp; sourceTree = "<group>"; };
+		A3458C201690D1870041FB73 /* USBDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBDeviceManager.h; sourceTree = "<group>"; };
+		A3458C211690D1870041FB73 /* USBInterfaceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBInterfaceManager.cpp; sourceTree = "<group>"; };
+		A3458C221690D1870041FB73 /* USBInterfaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBInterfaceManager.h; sourceTree = "<group>"; };
+		A3458C231690D1870041FB73 /* USBMIDIDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBMIDIDevice.cpp; sourceTree = "<group>"; };
+		A3458C241690D1870041FB73 /* USBMIDIDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBMIDIDevice.h; sourceTree = "<group>"; };
+		A3458C251690D1870041FB73 /* USBMIDIDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBMIDIDeviceManager.cpp; sourceTree = "<group>"; };
+		A3458C261690D1870041FB73 /* USBMIDIDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBMIDIDeviceManager.h; sourceTree = "<group>"; };
+		A3458C271690D1870041FB73 /* USBMIDIDriverBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBMIDIDriverBase.cpp; sourceTree = "<group>"; };
+		A3458C281690D1870041FB73 /* USBMIDIDriverBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBMIDIDriverBase.h; sourceTree = "<group>"; };
+		A3458C291690D1870041FB73 /* USBVendorMIDIDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBVendorMIDIDriver.cpp; sourceTree = "<group>"; };
+		A3458C2A1690D1870041FB73 /* USBVendorMIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBVendorMIDIDriver.h; sourceTree = "<group>"; };
+		A3F510BC168D541100349230 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		A3F5113B168D5B3F00349230 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		A3F5113D168D5B5500349230 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		A3F5113F168D5BAE00349230 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		A3F51141168D5BD700349230 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A3F51144168D5C7100349230 /* CAMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAMutex.cpp; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAMutex.cpp; sourceTree = "<group>"; };
+		A3F51145168D5C7100349230 /* CAMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAMutex.h; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAMutex.h; sourceTree = "<group>"; };
+		A3F51148168D5D2400349230 /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAHostTimeBase.cpp; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		A3F51149168D5D2400349230 /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAHostTimeBase.h; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAHostTimeBase.h; sourceTree = "<group>"; };
+		A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericUSBMidi.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F54AD5168D45D700349230 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenericUSBMidi-Info.plist"; sourceTree = "<group>"; };
+		A3F54ADB168D45D700349230 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3F54ADD168D45D700349230 /* GenericUSBMidiProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GenericUSBMidiProj.xcconfig; sourceTree = "<group>"; };
+		A3F54ADE168D45D700349230 /* GenericUSBMidiTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GenericUSBMidiTarget.xcconfig; sourceTree = "<group>"; };
+		A3F54ADF168D45D700349230 /* GenericUSBMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericUSBMidi.h; sourceTree = "<group>"; };
+		A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GenericUSBMidi.cp; sourceTree = "<group>"; };
+		A3F54BB0168D4C6900349230 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3F54ACF168D45D700349230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F51142168D5BD800349230 /* AudioToolbox.framework in Frameworks */,
+				A3F51140168D5BAE00349230 /* AudioUnit.framework in Frameworks */,
+				A3F5113E168D5B5500349230 /* CoreMIDI.framework in Frameworks */,
+				A3F5113C168D5B3F00349230 /* IOKit.framework in Frameworks */,
+				A3F510BD168D541100349230 /* CoreAudioKit.framework in Frameworks */,
+				A3F54AD6168D45D700349230 /* CoreFoundation.framework in Frameworks */,
+				A3F54BB1168D4C6900349230 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3458C111690D1870041FB73 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				A3458C121690D1870041FB73 /* Architecture.txt */,
+				A3458C131690D1870041FB73 /* IOServiceClient.cpp */,
+				A3458C141690D1870041FB73 /* IOServiceClient.h */,
+				A3458C151690D1870041FB73 /* MIDIBackCompatible.cpp */,
+				A3458C161690D1870041FB73 /* MIDIBackCompatible.h */,
+				A3458C171690D1870041FB73 /* MIDIDriver.cpp */,
+				A3458C181690D1870041FB73 /* MIDIDriverClass.h */,
+				A3458C191690D1870041FB73 /* MIDIDriverDevice.cpp */,
+				A3458C1A1690D1870041FB73 /* MIDIDriverDevice.h */,
+				A3458C1B1690D1870041FB73 /* MIDIDriverUtils.cpp */,
+				A3458C1C1690D1870041FB73 /* MIDIDriverUtils.h */,
+				A3458C1D1690D1870041FB73 /* USBDevice.cpp */,
+				A3458C1E1690D1870041FB73 /* USBDevice.h */,
+				A3458C1F1690D1870041FB73 /* USBDeviceManager.cpp */,
+				A3458C201690D1870041FB73 /* USBDeviceManager.h */,
+				A3458C211690D1870041FB73 /* USBInterfaceManager.cpp */,
+				A3458C221690D1870041FB73 /* USBInterfaceManager.h */,
+				A3458C231690D1870041FB73 /* USBMIDIDevice.cpp */,
+				A3458C241690D1870041FB73 /* USBMIDIDevice.h */,
+				A3458C251690D1870041FB73 /* USBMIDIDeviceManager.cpp */,
+				A3458C261690D1870041FB73 /* USBMIDIDeviceManager.h */,
+				A3458C271690D1870041FB73 /* USBMIDIDriverBase.cpp */,
+				A3458C281690D1870041FB73 /* USBMIDIDriverBase.h */,
+				A3458C291690D1870041FB73 /* USBVendorMIDIDriver.cpp */,
+				A3458C2A1690D1870041FB73 /* USBVendorMIDIDriver.h */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		A3F51143168D5C1C00349230 /* ExtClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A3F51148168D5D2400349230 /* CAHostTimeBase.cpp */,
+				A3F51149168D5D2400349230 /* CAHostTimeBase.h */,
+				A3F51144168D5C7100349230 /* CAMutex.cpp */,
+				A3F51145168D5C7100349230 /* CAMutex.h */,
+			);
+			name = ExtClasses;
+			sourceTree = "<group>";
+		};
+		A3F54AC7168D45D700349230 = {
+			isa = PBXGroup;
+			children = (
+				A3F51143168D5C1C00349230 /* ExtClasses */,
+				A3F54AD7168D45D700349230 /* GenericUSBMidi */,
+				A3F54AD4168D45D700349230 /* Frameworks */,
+				A3F54AD3168D45D700349230 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3F54AD3168D45D700349230 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3F54AD4168D45D700349230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3F5113B168D5B3F00349230 /* IOKit.framework */,
+				A3F5113D168D5B5500349230 /* CoreMIDI.framework */,
+				A3F5113F168D5BAE00349230 /* AudioUnit.framework */,
+				A3F51141168D5BD700349230 /* AudioToolbox.framework */,
+				A3F510BC168D541100349230 /* CoreAudioKit.framework */,
+				A3F54BB0168D4C6900349230 /* CoreAudio.framework */,
+				A3F54AD5168D45D700349230 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3F54AD7168D45D700349230 /* GenericUSBMidi */ = {
+			isa = PBXGroup;
+			children = (
+				A3458C111690D1870041FB73 /* shared */,
+				A3F54ADD168D45D700349230 /* GenericUSBMidiProj.xcconfig */,
+				A3F54ADE168D45D700349230 /* GenericUSBMidiTarget.xcconfig */,
+				A3F54ADF168D45D700349230 /* GenericUSBMidi.h */,
+				A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */,
+				A3F54AD8168D45D700349230 /* Supporting Files */,
+			);
+			path = GenericUSBMidi;
+			sourceTree = "<group>";
+		};
+		A3F54AD8168D45D700349230 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */,
+				A3F54ADA168D45D700349230 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A3F54AD0168D45D700349230 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F54AE0168D45D700349230 /* GenericUSBMidi.h in Headers */,
+				A3F51147168D5C7100349230 /* CAMutex.h in Headers */,
+				A3F5114B168D5D2400349230 /* CAHostTimeBase.h in Headers */,
+				A3458C2C1690D1870041FB73 /* IOServiceClient.h in Headers */,
+				A3458C2E1690D1870041FB73 /* MIDIBackCompatible.h in Headers */,
+				A3458C301690D1870041FB73 /* MIDIDriverClass.h in Headers */,
+				A3458C321690D1870041FB73 /* MIDIDriverDevice.h in Headers */,
+				A3458C341690D1870041FB73 /* MIDIDriverUtils.h in Headers */,
+				A3458C361690D1870041FB73 /* USBDevice.h in Headers */,
+				A3458C381690D1870041FB73 /* USBDeviceManager.h in Headers */,
+				A3458C3A1690D1870041FB73 /* USBInterfaceManager.h in Headers */,
+				A3458C3C1690D1870041FB73 /* USBMIDIDevice.h in Headers */,
+				A3458C3E1690D1870041FB73 /* USBMIDIDeviceManager.h in Headers */,
+				A3458C401690D1870041FB73 /* USBMIDIDriverBase.h in Headers */,
+				A3458C421690D1870041FB73 /* USBVendorMIDIDriver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A3F54AD1168D45D700349230 /* GenericUSBMidi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F54AE6168D45D700349230 /* Build configuration list for PBXNativeTarget "GenericUSBMidi" */;
+			buildPhases = (
+				A3F54ACE168D45D700349230 /* Sources */,
+				A3F54ACF168D45D700349230 /* Frameworks */,
+				A3F54AD0168D45D700349230 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenericUSBMidi;
+			productName = GenericUSBMidi;
+			productReference = A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3F54AC9168D45D700349230 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Yves Salathe";
+			};
+			buildConfigurationList = A3F54ACC168D45D700349230 /* Build configuration list for PBXProject "GenericUSBMidi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ar,
+				ca,
+				cs,
+				da,
+				Dutch,
+				el,
+				es,
+				fi,
+				French,
+				German,
+				he,
+				hr,
+				hu,
+				Italian,
+				Japanese,
+				ko,
+				no,
+				pl,
+				pt,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				uk,
+				zh_CN,
+				zh_TW,
+				English,
+				Spanish,
+				de,
+				fr,
+				it,
+				ja,
+				nl,
+			);
+			mainGroup = A3F54AC7168D45D700349230;
+			productRefGroup = A3F54AD3168D45D700349230 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3F54AD1168D45D700349230 /* GenericUSBMidi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3F54ACE168D45D700349230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F54AE3168D45D700349230 /* GenericUSBMidi.cp in Sources */,
+				A3F51146168D5C7100349230 /* CAMutex.cpp in Sources */,
+				A3F5114A168D5D2400349230 /* CAHostTimeBase.cpp in Sources */,
+				A3458C2B1690D1870041FB73 /* IOServiceClient.cpp in Sources */,
+				A3458C2D1690D1870041FB73 /* MIDIBackCompatible.cpp in Sources */,
+				A3458C2F1690D1870041FB73 /* MIDIDriver.cpp in Sources */,
+				A3458C311690D1870041FB73 /* MIDIDriverDevice.cpp in Sources */,
+				A3458C331690D1870041FB73 /* MIDIDriverUtils.cpp in Sources */,
+				A3458C351690D1870041FB73 /* USBDevice.cpp in Sources */,
+				A3458C371690D1870041FB73 /* USBDeviceManager.cpp in Sources */,
+				A3458C391690D1870041FB73 /* USBInterfaceManager.cpp in Sources */,
+				A3458C3B1690D1870041FB73 /* USBMIDIDevice.cpp in Sources */,
+				A3458C3D1690D1870041FB73 /* USBMIDIDeviceManager.cpp in Sources */,
+				A3458C3F1690D1870041FB73 /* USBMIDIDriverBase.cpp in Sources */,
+				A3458C411690D1870041FB73 /* USBVendorMIDIDriver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3F54ADA168D45D700349230 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3F54ADB168D45D700349230 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3F54AE4168D45D700349230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A3F54AE5168D45D700349230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A3F54AE7168D45D700349230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/Application Support/iWork '09/Frameworks\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Printers/Canon/BJPrinter/Frameworks\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Printers/Canon/IJScanner/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GenericUSBMidi/GenericUSBMidi-Prefix.pch";
+				INFOPLIST_FILE = "GenericUSBMidi/GenericUSBMidi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Perl/5.10/darwin-thread-multi-2level/lib\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Perl/5.12/darwin-thread-multi-2level/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		A3F54AE8168D45D700349230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/Application Support/iWork '09/Frameworks\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Printers/Canon/BJPrinter/Frameworks\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Printers/Canon/IJScanner/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GenericUSBMidi/GenericUSBMidi-Prefix.pch";
+				INFOPLIST_FILE = "GenericUSBMidi/GenericUSBMidi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/Libraries\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Java/Home/bundle/MacOS\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Perl/5.10/darwin-thread-multi-2level/lib\"",
+					"\"$(LOCAL_LIBRARY_DIR)/Perl/5.12/darwin-thread-multi-2level/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3F54ACC168D45D700349230 /* Build configuration list for PBXProject "GenericUSBMidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F54AE4168D45D700349230 /* Debug */,
+				A3F54AE5168D45D700349230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F54AE6168D45D700349230 /* Build configuration list for PBXNativeTarget "GenericUSBMidi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F54AE7168D45D700349230 /* Debug */,
+				A3F54AE8168D45D700349230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3F54AC9168D45D700349230 /* Project object */;
+}
