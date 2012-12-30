@@ -5,7 +5,7 @@ This is an OS X driver for MIDI devices connected via USB. It has been tested wi
 
 I started this project since at the time of writing, Roland does not provide drivers for the PC-300 that work with OS X v10.8 (Mountain Lion). 
 
-At the present stage it consists of sample code from Apple Inc. which was obtained from the casiousbmididriver (A Casio USB MIDI Interface driver for Mac OS X).
+At the present stage it consists of sample code from Apple Inc. which was obtained from the casiousbmididriver project (http://code.google.com/p/casiousbmididriver/).
 
 The only change to the sample code that was necessary to get the driver to work with the Roland PC-300, was to set the USB interface number, vendor ID and product ID in the file GenericUSBMidi.cp:
 
