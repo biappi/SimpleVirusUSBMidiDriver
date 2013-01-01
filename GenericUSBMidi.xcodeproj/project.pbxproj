@@ -415,7 +415,6 @@
 					"\"$(LOCAL_LIBRARY_DIR)/Printers/Canon/IJScanner/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GenericUSBMidi/GenericUSBMidi-Prefix.pch";
 				INFOPLIST_FILE = "GenericUSBMidi/GenericUSBMidi-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,7 +494,6 @@
 					"\"$(LOCAL_LIBRARY_DIR)/Printers/Canon/IJScanner/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GenericUSBMidi/GenericUSBMidi-Prefix.pch";
 				INFOPLIST_FILE = "GenericUSBMidi/GenericUSBMidi-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
