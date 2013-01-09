@@ -18,8 +18,8 @@ The idea of the present project would be to provide a generic open source OS X d
 
 After compiling the source with Xcode simply copy the resulting bundle GenericUSBMidi.plugin to the Folder /Library/Audio/MIDI Drivers/. This is most simply done with the following bash (Terminal) commands:
 
-cd $HOME/Library/Developer/Xcode/DerivedData/GenericUSBMidi*/Build/Products/Debug
-sudo cp -r GenericUSBMidi.plugin /Library/Audio/MIDI\ Drivers/
+    cd $HOME/Library/Developer/Xcode/DerivedData/GenericUSBMidi*/Build/Products/Debug
+    sudo cp -r GenericUSBMidi.plugin /Library/Audio/MIDI\ Drivers/
 
 Note: to find out where the "GenericUSBMidi.plugin" file has been created, right-click onto Products->GenericUSBMidi.plugin in Xcode and then click "Show in Finder". 
 
