@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31AC3BD169CECE000A689E7 /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31AC3B9169CECE000A689E7 /* CAHostTimeBase.cpp */; };
+		A31AC3BE169CECE000A689E7 /* CAHostTimeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A31AC3BA169CECE000A689E7 /* CAHostTimeBase.h */; };
+		A31AC3BF169CECE000A689E7 /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31AC3BB169CECE000A689E7 /* CAMutex.cpp */; };
+		A31AC3C0169CECE000A689E7 /* CAMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = A31AC3BC169CECE000A689E7 /* CAMutex.h */; };
+		A31AC3C3169CED1D00A689E7 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31AC3C1169CED1D00A689E7 /* CADebugMacros.cpp */; };
+		A31AC3C4169CED1D00A689E7 /* CADebugMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A31AC3C2169CED1D00A689E7 /* CADebugMacros.h */; };
+		A31AC3C7169CED5E00A689E7 /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31AC3C5169CED5E00A689E7 /* CADebugPrintf.cpp */; };
+		A31AC3C8169CED5E00A689E7 /* CADebugPrintf.h in Headers */ = {isa = PBXBuildFile; fileRef = A31AC3C6169CED5E00A689E7 /* CADebugPrintf.h */; };
+		A31AC3CA169CED7F00A689E7 /* CAException.h in Headers */ = {isa = PBXBuildFile; fileRef = A31AC3C9169CED7F00A689E7 /* CAException.h */; };
 		A3458C2B1690D1870041FB73 /* IOServiceClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C131690D1870041FB73 /* IOServiceClient.cpp */; };
 		A3458C2C1690D1870041FB73 /* IOServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C141690D1870041FB73 /* IOServiceClient.h */; };
 		A3458C2D1690D1870041FB73 /* MIDIBackCompatible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C151690D1870041FB73 /* MIDIBackCompatible.cpp */; };
@@ -36,10 +45,6 @@
 		A3F5113E168D5B5500349230 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113D168D5B5500349230 /* CoreMIDI.framework */; };
 		A3F51140168D5BAE00349230 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113F168D5BAE00349230 /* AudioUnit.framework */; };
 		A3F51142168D5BD800349230 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F51141168D5BD700349230 /* AudioToolbox.framework */; };
-		A3F51146168D5C7100349230 /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3F51144168D5C7100349230 /* CAMutex.cpp */; };
-		A3F51147168D5C7100349230 /* CAMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F51145168D5C7100349230 /* CAMutex.h */; };
-		A3F5114A168D5D2400349230 /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3F51148168D5D2400349230 /* CAHostTimeBase.cpp */; };
-		A3F5114B168D5D2400349230 /* CAHostTimeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F51149168D5D2400349230 /* CAHostTimeBase.h */; };
 		A3F54AD6168D45D700349230 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F54AD5168D45D700349230 /* CoreFoundation.framework */; };
 		A3F54AE0168D45D700349230 /* GenericUSBMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F54ADF168D45D700349230 /* GenericUSBMidi.h */; };
 		A3F54AE3168D45D700349230 /* GenericUSBMidi.cp in Sources */ = {isa = PBXBuildFile; fileRef = A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */; };
@@ -47,6 +52,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A31AC3B9169CECE000A689E7 /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		A31AC3BA169CECE000A689E7 /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAHostTimeBase.h; sourceTree = "<group>"; };
+		A31AC3BB169CECE000A689E7 /* CAMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAMutex.cpp; sourceTree = "<group>"; };
+		A31AC3BC169CECE000A689E7 /* CAMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMutex.h; sourceTree = "<group>"; };
+		A31AC3C1169CED1D00A689E7 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		A31AC3C2169CED1D00A689E7 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		A31AC3C5169CED5E00A689E7 /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		A31AC3C6169CED5E00A689E7 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		A31AC3C9169CED7F00A689E7 /* CAException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAException.h; sourceTree = "<group>"; };
 		A3458C121690D1870041FB73 /* Architecture.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Architecture.txt; sourceTree = "<group>"; };
 		A3458C131690D1870041FB73 /* IOServiceClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOServiceClient.cpp; sourceTree = "<group>"; };
 		A3458C141690D1870041FB73 /* IOServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOServiceClient.h; sourceTree = "<group>"; };
@@ -77,10 +91,6 @@
 		A3F5113D168D5B5500349230 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		A3F5113F168D5BAE00349230 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		A3F51141168D5BD700349230 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A3F51144168D5C7100349230 /* CAMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAMutex.cpp; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAMutex.cpp; sourceTree = "<group>"; };
-		A3F51145168D5C7100349230 /* CAMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAMutex.h; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAMutex.h; sourceTree = "<group>"; };
-		A3F51148168D5D2400349230 /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAHostTimeBase.cpp; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAHostTimeBase.cpp; sourceTree = "<group>"; };
-		A3F51149168D5D2400349230 /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAHostTimeBase.h; path = ../../../../../../Library/Developer/CoreAudio/PublicUtility/CAHostTimeBase.h; sourceTree = "<group>"; };
 		A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericUSBMidi.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F54AD5168D45D700349230 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenericUSBMidi-Info.plist"; sourceTree = "<group>"; };
@@ -113,6 +123,15 @@
 		A3458C111690D1870041FB73 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				A31AC3C9169CED7F00A689E7 /* CAException.h */,
+				A31AC3C5169CED5E00A689E7 /* CADebugPrintf.cpp */,
+				A31AC3C6169CED5E00A689E7 /* CADebugPrintf.h */,
+				A31AC3C1169CED1D00A689E7 /* CADebugMacros.cpp */,
+				A31AC3C2169CED1D00A689E7 /* CADebugMacros.h */,
+				A31AC3B9169CECE000A689E7 /* CAHostTimeBase.cpp */,
+				A31AC3BA169CECE000A689E7 /* CAHostTimeBase.h */,
+				A31AC3BB169CECE000A689E7 /* CAMutex.cpp */,
+				A31AC3BC169CECE000A689E7 /* CAMutex.h */,
 				A3458C121690D1870041FB73 /* Architecture.txt */,
 				A3458C131690D1870041FB73 /* IOServiceClient.cpp */,
 				A3458C141690D1870041FB73 /* IOServiceClient.h */,
@@ -142,21 +161,9 @@
 			path = shared;
 			sourceTree = "<group>";
 		};
-		A3F51143168D5C1C00349230 /* ExtClasses */ = {
-			isa = PBXGroup;
-			children = (
-				A3F51148168D5D2400349230 /* CAHostTimeBase.cpp */,
-				A3F51149168D5D2400349230 /* CAHostTimeBase.h */,
-				A3F51144168D5C7100349230 /* CAMutex.cpp */,
-				A3F51145168D5C7100349230 /* CAMutex.h */,
-			);
-			name = ExtClasses;
-			sourceTree = "<group>";
-		};
 		A3F54AC7168D45D700349230 = {
 			isa = PBXGroup;
 			children = (
-				A3F51143168D5C1C00349230 /* ExtClasses */,
 				A3F54AD7168D45D700349230 /* GenericUSBMidi */,
 				A3F54AD4168D45D700349230 /* Frameworks */,
 				A3F54AD3168D45D700349230 /* Products */,
@@ -215,8 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F54AE0168D45D700349230 /* GenericUSBMidi.h in Headers */,
-				A3F51147168D5C7100349230 /* CAMutex.h in Headers */,
-				A3F5114B168D5D2400349230 /* CAHostTimeBase.h in Headers */,
 				A3458C2C1690D1870041FB73 /* IOServiceClient.h in Headers */,
 				A3458C2E1690D1870041FB73 /* MIDIBackCompatible.h in Headers */,
 				A3458C301690D1870041FB73 /* MIDIDriverClass.h in Headers */,
@@ -229,6 +234,11 @@
 				A3458C3E1690D1870041FB73 /* USBMIDIDeviceManager.h in Headers */,
 				A3458C401690D1870041FB73 /* USBMIDIDriverBase.h in Headers */,
 				A3458C421690D1870041FB73 /* USBVendorMIDIDriver.h in Headers */,
+				A31AC3BE169CECE000A689E7 /* CAHostTimeBase.h in Headers */,
+				A31AC3C0169CECE000A689E7 /* CAMutex.h in Headers */,
+				A31AC3C4169CED1D00A689E7 /* CADebugMacros.h in Headers */,
+				A31AC3C8169CED5E00A689E7 /* CADebugPrintf.h in Headers */,
+				A31AC3CA169CED7F00A689E7 /* CAException.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F54AE3168D45D700349230 /* GenericUSBMidi.cp in Sources */,
-				A3F51146168D5C7100349230 /* CAMutex.cpp in Sources */,
-				A3F5114A168D5D2400349230 /* CAHostTimeBase.cpp in Sources */,
 				A3458C2B1690D1870041FB73 /* IOServiceClient.cpp in Sources */,
 				A3458C2D1690D1870041FB73 /* MIDIBackCompatible.cpp in Sources */,
 				A3458C2F1690D1870041FB73 /* MIDIDriver.cpp in Sources */,
@@ -334,6 +342,10 @@
 				A3458C3D1690D1870041FB73 /* USBMIDIDeviceManager.cpp in Sources */,
 				A3458C3F1690D1870041FB73 /* USBMIDIDriverBase.cpp in Sources */,
 				A3458C411690D1870041FB73 /* USBVendorMIDIDriver.cpp in Sources */,
+				A31AC3BD169CECE000A689E7 /* CAHostTimeBase.cpp in Sources */,
+				A31AC3BF169CECE000A689E7 /* CAMutex.cpp in Sources */,
+				A31AC3C3169CED1D00A689E7 /* CADebugMacros.cpp in Sources */,
+				A31AC3C7169CED5E00A689E7 /* CADebugPrintf.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
