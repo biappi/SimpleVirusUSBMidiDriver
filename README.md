@@ -15,9 +15,13 @@ The only change to the sample code that was necessary to get the driver to work 
 
 The idea of the present project would be to provide a generic open source OS X driver for several other USB MIDI devices. Contributions are welcome! 
 
-After compiling the source with Xcode simply copy the resulting bundle GenericUSBMidi.plugin to the Folder /Library/Audio/MIDI Drivers/. This is most simply done with the following bash (Terminal) command:
 
+After compiling the source with Xcode simply copy the resulting bundle GenericUSBMidi.plugin to the Folder /Library/Audio/MIDI Drivers/. This is most simply done with the following bash (Terminal) commands:
+
+cd $HOME/Library/Developer/Xcode/DerivedData/GenericUSBMidi*/Build/Products/Debug
 sudo cp -r GenericUSBMidi.plugin /Library/Audio/MIDI\ Drivers/
+
+Note: to find out where the "GenericUSBMidi.plugin" file has been created, right-click onto Products->GenericUSBMidi.plugin in Xcode and then click "Show in Finder". 
 
 After that it is necessary to reboot the MIDIServer process (or the entire OS). 
 
