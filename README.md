@@ -1,9 +1,9 @@
 GenericUSBMIDI
 ==============
 
-This is an OS X driver for MIDI devices connected via USB. It has been tested with a Roland (Ed) PC-300 MIDI Keyboard connected via USB to an Apple MacBook Pro running Mac OS X v10.8.2 (Mountain Lion).
+This is an OS X driver for MIDI devices connected via USB. It has been tested with a Roland (Ed) PC-300 MIDI Keyboard connected via USB to an Apple MacBook Pro running Mac OS X v10.8.2 (Mountain Lion) as well as v10.9.1 (Mavericks).
 
-I started this project since at the time of writing, Roland does not provide drivers for the PC-300 that work with OS X v10.8 (Mountain Lion). 
+I started this project since at the time of writing Roland corp. does not provide drivers for the PC-300 that work with OS X versions greater than v10.5 (Leopard). 
 
 At the present stage it consists of sample code from Apple Inc. which was obtained from the casiousbmididriver project (http://code.google.com/p/casiousbmididriver/).
 
