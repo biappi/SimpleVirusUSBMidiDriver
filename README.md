@@ -21,7 +21,9 @@ After compiling the source with Xcode simply copy the resulting bundle GenericUS
     cd $HOME/Library/Developer/Xcode/DerivedData/GenericUSBMidi*/Build/Products/Debug
     sudo cp -r GenericUSBMidi.plugin /Library/Audio/MIDI\ Drivers/
 
-Note: to find out where the "GenericUSBMidi.plugin" file has been created, right-click onto Products->GenericUSBMidi.plugin in Xcode and then click "Show in Finder". 
+Note: to find out where the "GenericUSBMidi.plugin" file has been created, right-click onto Products->GenericUSBMidi.plugin in Xcode and then click "Show in Finder". This is illustrated in the file ShowInFinder.png:
+
+[screenshot to illustrate how to find the compiled plugin in Finder](ShowInFinder.png)
 
 After that it is necessary to reboot the MIDIServer process (or the entire OS). 
 
