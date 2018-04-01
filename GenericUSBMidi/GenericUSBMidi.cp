@@ -117,7 +117,7 @@ MIDIDeviceRef	GenericUSBMidiDriver::CreateDevice(	USBDevice *		inUSBDevice,
 			CFStringGetCString(boxName, portname, sizeof(portname), kCFStringEncodingMacRoman);
         
 		CFStringRef str = CFStringCreateWithCString(NULL, portname, 0);
-		MIDIDeviceAddEntity(dev, str, true, 1, 1, &ent);
+		MIDIDeviceAddEntity(dev, str, false, 1, 1, &ent);
 		CFRelease(str);
 	}
     
