@@ -41,6 +41,7 @@
 #ifndef __USBDevice_h__
 #define __USBDevice_h__
 
+#import <AssertMacros.h>
 #include <CoreServices/CoreServices.h>	// we need Debugging.h, CF, etc.
 #include <IOKit/usb/IOUSBLib.h>
 #include <IOKit/usb/USB.h>

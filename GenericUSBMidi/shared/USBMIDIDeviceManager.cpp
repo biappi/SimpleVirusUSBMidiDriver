@@ -113,7 +113,7 @@ OSStatus	USBMIDIDeviceManager::UseDeviceAndInterface(USBDevice *		usbDevice,
 	CFStringRef serialNumber = usbDevice->GetString(devDesc->iSerialNumber);
 	OSStatus err;
 	UInt32 locationID;
-	require_noerr(err = (*devIntf)->GetLocationID(devIntf, &locationID), errexit);
+	__Require_noErr(err = (*devIntf)->GetLocationID(devIntf, &locationID), errexit);
 	{
 		// See if it's already in the setup
 		MIDIDeviceListRef curDevices = MIDIGetDriverDeviceList(mDriver->Self());
@@ -175,7 +175,7 @@ OSStatus	USBMIDIDeviceManager::UseDeviceAndInterface(USBDevice *		usbDevice,
 		#endif
 		
 		midiDevice = mDriver->CreateDevice(usbDevice, usbInterface);
-		require_noerr(err = MIDISetupAddDevice(midiDevice), errexit);
+		__Require_noErr(err = MIDISetupAddDevice(midiDevice), errexit);
 	} else {
 		#if VERBOSE
 			printf("old device found\n");

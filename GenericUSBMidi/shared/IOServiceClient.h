@@ -41,6 +41,7 @@
 #ifndef __IOServiceClient_h__
 #define __IOServiceClient_h__
 
+#import <AssertMacros.h>
 #include <CoreServices/CoreServices.h>	// we need Debugging.h, CF, etc.
 #include <IOKit/IOKitLib.h>
 
