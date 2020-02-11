@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright ï¿½ 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -151,7 +151,7 @@ const IOUSBDeviceDescriptor *	USBDevice::GetDeviceDescriptor()
 	
 	if (LoadDescriptor(kUSBDeviceDesc, 0, 0, &mDeviceDesc, sizeof(mDeviceDesc)) < 0) {
 #if DEBUG
-		printf("device @ 0x%08lX - can't get descriptor\n", mLocationID);
+		printf("device @ 0x%08ulX - can't get descriptor\n", mLocationID);
 #endif
 		goto errexit;
 	}

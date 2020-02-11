@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright ï¿½ 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -257,21 +257,21 @@ inline int		MIDIDataBytes(Byte status)
 #if DEBUG
 class Profiler {
 public:
-	Profiler(const char *funcName, UInt32 threshMicros = 0) : 
+	Profiler(const char *funcName, UInt64 threshMicros = 0) :
 		mFuncName(funcName), 
 		mStartTime(CAHostTimeBase::GetCurrentTime()),
 		mThreshMicros(threshMicros) { }
 
 	~Profiler()
 	{
-		UInt32 elapsed = CAHostTimeBase::ConvertFromNanos(CAHostTimeBase::GetCurrentTime() - mStartTime) / 1000;
+		UInt64 elapsed = CAHostTimeBase::ConvertFromNanos(CAHostTimeBase::GetCurrentTime() - mStartTime) / 1000;
 		if (elapsed >= mThreshMicros)
-			printf("%s took %ld us\n", mFuncName, elapsed);
+			printf("%s took %llu us\n", mFuncName, elapsed);
 	}
 
 	const char *mFuncName;
 	UInt64		mStartTime;
-	UInt32		mThreshMicros;
+	UInt64		mThreshMicros;
 };
 #endif
 
