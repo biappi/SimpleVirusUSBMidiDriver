@@ -43,8 +43,7 @@
 		A3F5113C168D5B3F00349230 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113B168D5B3F00349230 /* IOKit.framework */; };
 		A3F5113E168D5B5500349230 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113D168D5B5500349230 /* CoreMIDI.framework */; };
 		A3F54AD6168D45D700349230 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F54AD5168D45D700349230 /* CoreFoundation.framework */; };
-		A3F54AE0168D45D700349230 /* GenericUSBMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F54ADF168D45D700349230 /* GenericUSBMidi.h */; };
-		A3F54AE3168D45D700349230 /* GenericUSBMidi.cp in Sources */ = {isa = PBXBuildFile; fileRef = A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */; };
+		A3F54AE3168D45D700349230 /* SimpleVirusUSBMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3F54AE2168D45D700349230 /* SimpleVirusUSBMidi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,11 +83,10 @@
 		A3458C2A1690D1870041FB73 /* USBVendorMIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBVendorMIDIDriver.h; sourceTree = "<group>"; };
 		A3F5113B168D5B3F00349230 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		A3F5113D168D5B5500349230 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericUSBMidi.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F54AD2168D45D700349230 /* SimpleVirusUSBMidi.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleVirusUSBMidi.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F54AD5168D45D700349230 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenericUSBMidi-Info.plist"; sourceTree = "<group>"; };
-		A3F54ADF168D45D700349230 /* GenericUSBMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericUSBMidi.h; sourceTree = "<group>"; };
-		A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GenericUSBMidi.cp; sourceTree = "<group>"; };
+		A3F54AD9168D45D700349230 /* SimpleVirusUSBMidi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleVirusUSBMidi-Info.plist"; sourceTree = "<group>"; };
+		A3F54AE2168D45D700349230 /* SimpleVirusUSBMidi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleVirusUSBMidi.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A3458C111690D1870041FB73 /* shared */ = {
+		A3458C111690D1870041FB73 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				A31AC3C9169CED7F00A689E7 /* CAException.h */,
@@ -143,13 +141,13 @@
 				A3458C291690D1870041FB73 /* USBVendorMIDIDriver.cpp */,
 				A3458C2A1690D1870041FB73 /* USBVendorMIDIDriver.h */,
 			);
-			path = shared;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		A3F54AC7168D45D700349230 = {
 			isa = PBXGroup;
 			children = (
-				A3F54AD7168D45D700349230 /* GenericUSBMidi */,
+				A3F54AD7168D45D700349230 /* SimpleVirusUSBMidi */,
 				A3F54AD4168D45D700349230 /* Frameworks */,
 				A3F54AD3168D45D700349230 /* Products */,
 			);
@@ -158,7 +156,7 @@
 		A3F54AD3168D45D700349230 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */,
+				A3F54AD2168D45D700349230 /* SimpleVirusUSBMidi.plugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,23 +171,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A3F54AD7168D45D700349230 /* GenericUSBMidi */ = {
+		A3F54AD7168D45D700349230 /* SimpleVirusUSBMidi */ = {
 			isa = PBXGroup;
 			children = (
-				A3458C111690D1870041FB73 /* shared */,
-				A3F54ADF168D45D700349230 /* GenericUSBMidi.h */,
-				A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */,
-				A3F54AD8168D45D700349230 /* Supporting Files */,
+				A3458C111690D1870041FB73 /* Shared */,
+				A3F54AE2168D45D700349230 /* SimpleVirusUSBMidi.cpp */,
+				A3F54AD9168D45D700349230 /* SimpleVirusUSBMidi-Info.plist */,
 			);
-			path = GenericUSBMidi;
-			sourceTree = "<group>";
-		};
-		A3F54AD8168D45D700349230 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */,
-			);
-			name = "Supporting Files";
+			path = SimpleVirusUSBMidi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +188,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3F54AE0168D45D700349230 /* GenericUSBMidi.h in Headers */,
 				A3458C2C1690D1870041FB73 /* IOServiceClient.h in Headers */,
 				A3458C2E1690D1870041FB73 /* MIDIBackCompatible.h in Headers */,
 				A3458C301690D1870041FB73 /* MIDIDriverClass.h in Headers */,
@@ -223,9 +211,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A3F54AD1168D45D700349230 /* GenericUSBMidi */ = {
+		A3F54AD1168D45D700349230 /* SimpleVirusUSBMidi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3F54AE6168D45D700349230 /* Build configuration list for PBXNativeTarget "GenericUSBMidi" */;
+			buildConfigurationList = A3F54AE6168D45D700349230 /* Build configuration list for PBXNativeTarget "SimpleVirusUSBMidi" */;
 			buildPhases = (
 				A3F54ACE168D45D700349230 /* Sources */,
 				A3F54ACF168D45D700349230 /* Frameworks */,
@@ -235,9 +223,9 @@
 			);
 			dependencies = (
 			);
-			name = GenericUSBMidi;
+			name = SimpleVirusUSBMidi;
 			productName = GenericUSBMidi;
-			productReference = A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */;
+			productReference = A3F54AD2168D45D700349230 /* SimpleVirusUSBMidi.plugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +237,7 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Yves Salathe";
 			};
-			buildConfigurationList = A3F54ACC168D45D700349230 /* Build configuration list for PBXProject "GenericUSBMidi" */;
+			buildConfigurationList = A3F54ACC168D45D700349230 /* Build configuration list for PBXProject "SimpleVirusUSBMidi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,7 +249,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3F54AD1168D45D700349230 /* GenericUSBMidi */,
+				A3F54AD1168D45D700349230 /* SimpleVirusUSBMidi */,
 			);
 		};
 /* End PBXProject section */
@@ -271,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3F54AE3168D45D700349230 /* GenericUSBMidi.cp in Sources */,
+				A3F54AE3168D45D700349230 /* SimpleVirusUSBMidi.cpp in Sources */,
 				A3458C2B1690D1870041FB73 /* IOServiceClient.cpp in Sources */,
 				A3458C2D1690D1870041FB73 /* MIDIBackCompatible.cpp in Sources */,
 				A3458C2F1690D1870041FB73 /* MIDIDriver.cpp in Sources */,
@@ -391,8 +379,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "GenericUSBMidi/GenericUSBMidi-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "YvesSalathe.${PRODUCT_NAME:rfc1034identifier}";
+				INFOPLIST_FILE = "SimpleVirusUSBMidi/SimpleVirusUSBMidi-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "name.malara.antonio.simple-virus-usb-midi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = plugin;
 			};
@@ -403,8 +391,8 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INFOPLIST_FILE = "GenericUSBMidi/GenericUSBMidi-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "YvesSalathe.${PRODUCT_NAME:rfc1034identifier}";
+				INFOPLIST_FILE = "SimpleVirusUSBMidi/SimpleVirusUSBMidi-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "name.malara.antonio.simple-virus-usb-midi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = plugin;
 			};
@@ -413,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3F54ACC168D45D700349230 /* Build configuration list for PBXProject "GenericUSBMidi" */ = {
+		A3F54ACC168D45D700349230 /* Build configuration list for PBXProject "SimpleVirusUSBMidi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3F54AE4168D45D700349230 /* Debug */,
@@ -422,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3F54AE6168D45D700349230 /* Build configuration list for PBXNativeTarget "GenericUSBMidi" */ = {
+		A3F54AE6168D45D700349230 /* Build configuration list for PBXNativeTarget "SimpleVirusUSBMidi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3F54AE7168D45D700349230 /* Debug */,
