@@ -40,15 +40,11 @@
 		A3458C401690D1870041FB73 /* USBMIDIDriverBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C281690D1870041FB73 /* USBMIDIDriverBase.h */; };
 		A3458C411690D1870041FB73 /* USBVendorMIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3458C291690D1870041FB73 /* USBVendorMIDIDriver.cpp */; };
 		A3458C421690D1870041FB73 /* USBVendorMIDIDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = A3458C2A1690D1870041FB73 /* USBVendorMIDIDriver.h */; };
-		A3F510BD168D541100349230 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F510BC168D541100349230 /* CoreAudioKit.framework */; };
 		A3F5113C168D5B3F00349230 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113B168D5B3F00349230 /* IOKit.framework */; };
 		A3F5113E168D5B5500349230 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113D168D5B5500349230 /* CoreMIDI.framework */; };
-		A3F51140168D5BAE00349230 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F5113F168D5BAE00349230 /* AudioUnit.framework */; };
-		A3F51142168D5BD800349230 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F51141168D5BD700349230 /* AudioToolbox.framework */; };
 		A3F54AD6168D45D700349230 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F54AD5168D45D700349230 /* CoreFoundation.framework */; };
 		A3F54AE0168D45D700349230 /* GenericUSBMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F54ADF168D45D700349230 /* GenericUSBMidi.h */; };
 		A3F54AE3168D45D700349230 /* GenericUSBMidi.cp in Sources */ = {isa = PBXBuildFile; fileRef = A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */; };
-		A3F54BB1168D4C6900349230 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F54BB0168D4C6900349230 /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,17 +82,13 @@
 		A3458C281690D1870041FB73 /* USBMIDIDriverBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBMIDIDriverBase.h; sourceTree = "<group>"; };
 		A3458C291690D1870041FB73 /* USBVendorMIDIDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBVendorMIDIDriver.cpp; sourceTree = "<group>"; };
 		A3458C2A1690D1870041FB73 /* USBVendorMIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBVendorMIDIDriver.h; sourceTree = "<group>"; };
-		A3F510BC168D541100349230 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		A3F5113B168D5B3F00349230 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		A3F5113D168D5B5500349230 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		A3F5113F168D5BAE00349230 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
-		A3F51141168D5BD700349230 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericUSBMidi.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F54AD5168D45D700349230 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenericUSBMidi-Info.plist"; sourceTree = "<group>"; };
 		A3F54ADF168D45D700349230 /* GenericUSBMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericUSBMidi.h; sourceTree = "<group>"; };
 		A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GenericUSBMidi.cp; sourceTree = "<group>"; };
-		A3F54BB0168D4C6900349230 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +96,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3F51142168D5BD800349230 /* AudioToolbox.framework in Frameworks */,
-				A3F51140168D5BAE00349230 /* AudioUnit.framework in Frameworks */,
 				A3F5113E168D5B5500349230 /* CoreMIDI.framework in Frameworks */,
 				A3F5113C168D5B3F00349230 /* IOKit.framework in Frameworks */,
-				A3F510BD168D541100349230 /* CoreAudioKit.framework in Frameworks */,
 				A3F54AD6168D45D700349230 /* CoreFoundation.framework in Frameworks */,
-				A3F54BB1168D4C6900349230 /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,10 +168,6 @@
 			children = (
 				A3F5113B168D5B3F00349230 /* IOKit.framework */,
 				A3F5113D168D5B5500349230 /* CoreMIDI.framework */,
-				A3F5113F168D5BAE00349230 /* AudioUnit.framework */,
-				A3F51141168D5BD700349230 /* AudioToolbox.framework */,
-				A3F510BC168D541100349230 /* CoreAudioKit.framework */,
-				A3F54BB0168D4C6900349230 /* CoreAudio.framework */,
 				A3F54AD5168D45D700349230 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
