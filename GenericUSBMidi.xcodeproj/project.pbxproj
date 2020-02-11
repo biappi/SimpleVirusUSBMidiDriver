@@ -94,7 +94,6 @@
 		A3F54AD2168D45D700349230 /* GenericUSBMidi.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericUSBMidi.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F54AD5168D45D700349230 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenericUSBMidi-Info.plist"; sourceTree = "<group>"; };
-		A3F54ADB168D45D700349230 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3F54ADF168D45D700349230 /* GenericUSBMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericUSBMidi.h; sourceTree = "<group>"; };
 		A3F54AE2168D45D700349230 /* GenericUSBMidi.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GenericUSBMidi.cp; sourceTree = "<group>"; };
 		A3F54BB0168D4C6900349230 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -205,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				A3F54AD9168D45D700349230 /* GenericUSBMidi-Info.plist */,
-				A3F54ADA168D45D700349230 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -269,46 +267,10 @@
 			};
 			buildConfigurationList = A3F54ACC168D45D700349230 /* Build configuration list for PBXProject "GenericUSBMidi" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				ar,
-				ca,
-				cs,
-				da,
-				Dutch,
-				el,
-				es,
-				fi,
-				French,
-				German,
-				he,
-				hr,
-				hu,
-				Italian,
-				Japanese,
-				ko,
-				no,
-				pl,
-				pt,
-				pt_PT,
-				ro,
-				ru,
-				sk,
-				sv,
-				th,
-				tr,
-				uk,
-				zh_CN,
-				zh_TW,
-				English,
-				Spanish,
-				de,
-				fr,
-				it,
-				ja,
-				nl,
 			);
 			mainGroup = A3F54AC7168D45D700349230;
 			productRefGroup = A3F54AD3168D45D700349230 /* Products */;
@@ -346,17 +308,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A3F54ADA168D45D700349230 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3F54ADB168D45D700349230 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A3F54AE4168D45D700349230 /* Debug */ = {
