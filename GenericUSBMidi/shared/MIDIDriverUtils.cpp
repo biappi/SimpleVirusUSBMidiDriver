@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright ï¿½ 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -92,6 +92,6 @@ extern "C" void DebugAssert(
 	if (realDAProc)
 		(*realDAProc)(componentSignature, options, assertionString, exceptionString, errorString, fileName, lineNumber, value);
 	else
-		*(long *)0 = 0;	// bus error
+		*(volatile long *)0 = 0;	// bus error
 }
 #endif
