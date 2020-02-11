@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright ï¿½ 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -54,7 +54,7 @@ USBMIDIDeviceManager::USBMIDIDeviceManager(				USBMIDIDriverBase *		driver,
 	mDriver(driver)
 {
 	// this could be moved to a utility function
-	int nDevices = MIDIDeviceListGetNumberOfDevices(devList);
+	ItemCount nDevices = MIDIDeviceListGetNumberOfDevices(devList);
 	
 	if (driver->mVersion >= 2) {
 		// mark everything previously present as offline
@@ -117,7 +117,8 @@ OSStatus	USBMIDIDeviceManager::UseDeviceAndInterface(USBDevice *		usbDevice,
 	{
 		// See if it's already in the setup
 		MIDIDeviceListRef curDevices = MIDIGetDriverDeviceList(mDriver->Self());
-		int nDevices = MIDIDeviceListGetNumberOfDevices(curDevices), firstPass, lastPass;
+        ItemCount nDevices = MIDIDeviceListGetNumberOfDevices(curDevices);
+        int firstPass, lastPass;
 		if (serialNumber == NULL) {
 			firstPass = 2;
 			lastPass = 3;

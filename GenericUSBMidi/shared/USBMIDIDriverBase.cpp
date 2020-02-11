@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright ï¿½ 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -110,7 +110,7 @@ void	USBMIDIDriverBase::USBMIDIHandleInput(	USBMIDIDevice *	usbmDev,
 	Byte pbuf[512];
 	MIDIPacketList *pktlist = (MIDIPacketList *)pbuf;
 	MIDIPacket *pkt = MIDIPacketListInit(pktlist);
-	int prevCable = -1;	// signifies none
+	ItemCount prevCable = -1;	// signifies none
 	bool insysex = false;
 
 	for ( ; src < srcend; src += 4) {
@@ -120,7 +120,7 @@ void	USBMIDIDriverBase::USBMIDIHandleInput(	USBMIDIDevice *	usbmDev,
 			// skip over reserved cin's before doing any more work
 			continue;
 		
-		int cable = src[0] >> 4;
+		ItemCount cable = src[0] >> 4;
 		int msglen;
 		// support single-entity devices that seem to use an arbitrary cable number
 		// (besides which, it's good to have range-checking)
@@ -270,7 +270,7 @@ ByteCount	USBMIDIDriverBase::USBMIDIPrepareOutput(	USBMIDIDevice *	usbmDev,
 		Byte *dataStart = wqe->packet.Data();
 		Byte *src = dataStart + wqe->bytesSent;
 		Byte *srcend = dataStart + wqe->packet.Length();
-		int srcLeft;
+		size_t srcLeft;
 
 #if !CAN_USE_USB_UNPARSED_EVENTS
 		// have to check to see if we have 1 or 2 bytes of dangling unsent sysex (won't contain F7)

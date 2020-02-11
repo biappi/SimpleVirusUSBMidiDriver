@@ -1,4 +1,4 @@
-/*	Copyright © 2007 Apple Inc. All Rights Reserved.
+/*	Copyright ï¿½ 2007 Apple Inc. All Rights Reserved.
 	
 	Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
 			Apple Inc. ("Apple") in consideration of your agreement to the
@@ -69,7 +69,7 @@ public:
 	// drivers so they are included and initialized for convenience.
 	// --- used by base ---
 	MIDIDeviceRef				mMIDIDevice;
-	int							mNumEntities;
+	ItemCount					mNumEntities;
 	SourceList					mSources;
 };
 
