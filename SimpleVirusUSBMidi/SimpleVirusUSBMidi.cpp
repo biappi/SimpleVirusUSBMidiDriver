@@ -6,31 +6,34 @@ extern "C" void *NewSimpleVirusUSBMidiDriver(CFAllocatorRef allocator, CFUUIDRef
 
 // - //
 
-#define kMyVendorID         0x0582
-#define kMyProductID        0x0008
-#define kTheInterfaceToUse  2
-#define kMyNumPorts         1
+const uint16_t kUSBVendorIdKemper  = 0x133e;
+const uint16_t kUSBProductIdVirus  = 0x0815;
 
-// Factory UUID: A1F2F3CB-5A1F-4066-9255-96557C3DD539
-#define kFactoryUUID CFUUIDGetConstantUUIDWithBytes(\
-    NULL, \
-    0xA1, \
-    0xF2, \
-    0xF3, \
-    0xCB, \
-    0x5A, \
-    0x1F, \
-    0x40, \
-    0x66, \
-    0x92, \
-    0x55, \
-    0x96, \
-    0x55, \
-    0x7C, \
-    0x3D, \
-    0xD5, \
-    0x39  \
-)
+const int      kUSBMidiInterface   = 3;
+
+static CFUUIDRef DriverFactoryUUID() {
+    // Factory UUID: A1F2F3CB-5A1F-4066-9255-96557C3DD539
+    
+    return CFUUIDGetConstantUUIDWithBytes(
+      NULL,
+      0xA1,
+      0xF2,
+      0xF3,
+      0xCB,
+      0x5A,
+      0x1F,
+      0x40,
+      0x66,
+      0x92,
+      0x55,
+      0x96,
+      0x55,
+      0x7C,
+      0x3D,
+      0xD5,
+      0x39
+  );
+}
 
 // - //
 
@@ -38,7 +41,7 @@ class SimpleVirusUSBMidiDriver : public USBVendorMIDIDriver {
 public:
     
     SimpleVirusUSBMidiDriver()
-        : USBVendorMIDIDriver(kFactoryUUID)
+        : USBVendorMIDIDriver(DriverFactoryUUID())
     {
     }
 
@@ -52,8 +55,8 @@ public:
     {
         const IOUSBDeviceDescriptor * devDesc = inUSBDevice->GetDeviceDescriptor();
         
-        return ((USBToHostWord(devDesc->idVendor)  == kMyVendorID) &&
-                (USBToHostWord(devDesc->idProduct) == kMyProductID));
+        return ((USBToHostWord(devDesc->idVendor)  == kUSBVendorIdKemper) &&
+                (USBToHostWord(devDesc->idProduct) == kUSBProductIdVirus));
     }
     
     virtual MIDIDeviceRef CreateDevice(USBDevice *    inUSBDevice,
@@ -62,41 +65,31 @@ public:
         MIDIDeviceRef dev;
         MIDIEntityRef ent;
         
-        CFStringRef boxName = CFSTR("Roland PC-300 USB Keyboard");
-        
-        MIDIDeviceCreate(Self(),
-                         boxName,
-                         CFSTR("Roland"),
-                         boxName,
-                         &dev);
-        
-        // make entity for each port, with 1 source, 1 destination
-        for (int port = 1; port <= kMyNumPorts; ++port) {
-            char portname[64];
-            
-            if (kMyNumPorts > 1)
-                sprintf(portname, "Port %d", port);
-            else
-                CFStringGetCString(boxName, portname, sizeof(portname), kCFStringEncodingMacRoman);
-            
-            CFStringRef str = CFStringCreateWithCString(NULL, portname, 0);
-            MIDIDeviceAddEntity(dev, str, false, 1, 1, &ent);
-            CFRelease(str);
-        }
+        MIDIDeviceCreate(Self(), CFSTR("Simple Virus USB"), CFSTR("Access"), CFSTR("Virus"), &dev);
+        MIDIDeviceAddEntity(dev, CFSTR("Virus External Midi"), false, 1, 1, &ent);
+        MIDIDeviceAddEntity(dev, CFSTR("Virus Internal Synth"), false, 1, 1, &ent);
         
         return dev;
     }
 
     virtual USBInterface * CreateInterface(USBMIDIDevice * device)
     {
-        USBInterface *intf = device->mUSBDevice->FindInterface(kTheInterfaceToUse, 0);
-        return intf;
+        return device->mUSBDevice->FindInterface(kUSBMidiInterface, 0);
     }
 
     // pipes are opened, do any extra initialization (send config msgs etc)
     virtual void StartInterface(USBMIDIDevice * usbmDev)
     {
-
+        uint8_t buf[] = { 0x4e, 0x73, 0x52, 0x01 };
+        
+        auto usbif = *(usbmDev->mUSBIntfIntf);
+        
+        usbif->WritePipe(
+            usbmDev->mUSBIntfIntf,
+            usbmDev->mOutPipe.mPipeIndex,
+            buf,
+            sizeof(buf)
+        );
     }
     
     // pipes are about to be closed, do any preliminary cleanup
