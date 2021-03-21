@@ -67,6 +67,9 @@ the `Products` folder.
 You can drag and drop the product from the Xcode window to the `/Library/Audio/MIDI Drivers/`
 folder.
 
+### Figure 1 - Xcode compilation output
+
+![Xcode Screenshot](https://github.com/biappi/SimpleVirusUSBMidiDriver/blob/images/where-to-find-product.png?raw=true)
 
 ## Acknowledgements
 
