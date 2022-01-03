@@ -1,10 +1,10 @@
 # SimpleVirusUSBMidiDriver
 
-A CoreMIDI Driver for the Access Virus TI2.
+A CoreMIDI Driver for the Access Virus TI/TI2.
 
 ## Description
 
-This driver enables the MIDI interfaces of an [Access Virus TI2](https://virus.info/).
+This driver enables the MIDI interfaces of an [Access Virus TI/TI2](https://virus.info/).
 
 While the audio section of the synthesizer is class-compliant, the MIDI interface needs
 some additional non-standard steps during the device configuration.
@@ -16,7 +16,7 @@ be installed.
 ## Support
 
 The minimal requirement is macOS 10.8 (Mountain Lion), and it is tested to work on the
-current macOS version, 10.15 (Catalina).
+current macOS version, 12.1 (Monterey).
 
 Unfortunately, since this driver requires exclusive access to the Virus, it is *not*
 possible to run it alongside the official Access drivers.
